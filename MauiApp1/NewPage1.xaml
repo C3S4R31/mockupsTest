@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1"
+             Shell.FlyoutBehavior="Flyout">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10"
+                             VerticalOptions="Start">
+
+            <Image
+                Source="drhlogo.jpg"
+                HeightRequest="200"
+                WidthRequest="200"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Welcome!" FontSize="28" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Label Text="login your account" FontSize="18" HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame HasShadow="True" HeightRequest="56" BorderColor="White" WidthRequest="56" CornerRadius="28" >
+
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="Username" Margin="20,0,0,0" Placeholder="User Name" Keyboard="Email" VerticalOptions="Center" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame HasShadow="True" HeightRequest="56" BorderColor="White" WidthRequest="56" CornerRadius="28" >
+
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand">
+                    <Entry x:Name="Password" Margin="20,0,0,0" Placeholder="Password" Keyboard="Email" IsPassword="True" VerticalOptions="Center" />
+                </Frame>
+            </StackLayout>
+
+            <VerticalStackLayout VerticalOptions="Start">
+                <Label
+                    Text="Welcome to DoctorHelper AI"
+                    VerticalOptions="Start"
+                    VerticalTextAlignment="Start"
+                    Padding="50"
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+            <VerticalStackLayout VerticalOptions="Center"
+                                 Padding="30">
+                <Button
+                    x:Name="SignInBtn"
+                    Text="Sign in"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+                <Button
+                    x:Name="SignUpBtn"
+                    Text="Sign Up"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="SignUpBtn_Clicked"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+
+    <Grid x:Name="ScreenGrid" VerticalOptions="Center" RowDefinitions="Auto,Auto,Auto,Auto">
+
+        <!--<BoxView Color="IndianRed" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="Aquamarine" Grid.Column="1" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="IndianRed" Grid.Column="2" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="Aquamarine" Grid.Column="3" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="IndianRed" Grid.Column="4" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="Aquamarine" Grid.Column="5" Grid.Row="0" Grid.RowSpan="4" />
+        <BoxView Color="IndianRed" Grid.Column="6" Grid.Row="0" Grid.RowSpan="4" />-->
+
+        <Image Source="drhlogo.jpg" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5"/>
+
+        <Label Text="DoctorHelper® AI" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" FontSize="31.25" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,8,0,0" FontFamily="Montserrat"/>
+
+        <Button Text="Sign In"
+                HeightRequest="54"
+                BackgroundColor="#9ED6DF"
+                FontSize="16" FontAttributes="Bold"
+                Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5"
+                Margin="0,104,0,24"
+                Clicked="Button_Clicked"/>
+
+        <Button Text="Register" TextColor="#9ED6DF"
+                HeightRequest="54"
+                BackgroundColor="#FFFFFF" BorderColor="#9ED6DF" BorderWidth="1"
+                FontSize="16" FontAttributes="Bold"
+                Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" />
+
+        <!--<Label x:Name="mylabel1" Text="Valor" FontSize="25" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
+        <Label x:Name="mylabel2" Text="Valor" FontSize="25" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" />-->
+    </Grid>
+
+
+
+</ContentPage>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Login"
+             Title="Login">
+    <Grid x:Name="ScreenGrid" VerticalOptions="Center" RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+
+        <BoxView Color="IndianRed" Grid.Column="0" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="Aquamarine" Grid.Column="1" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="IndianRed" Grid.Column="2" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="Aquamarine" Grid.Column="3" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="IndianRed" Grid.Column="4" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="Aquamarine" Grid.Column="5" Grid.Row="0" Grid.RowSpan="5" />
+        <BoxView Color="IndianRed" Grid.Column="6" Grid.Row="0" Grid.RowSpan="5" />
+
+        <Image Source="drhlogo.jpg" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="3"/>
+
+        <Label Text="DoctorHelper® AI" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,8,0,0" FontFamily="Montserrat"/>
+
+        <Entry x:Name="entry1"
+               Placeholder="Enter Text"
+               Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="7"
+               Margin="0,24,0,8" />
+
+        <Entry x:Name="entry2"
+               Placeholder="Enter Text"
+               Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="7" />
+
+        <Button Text="Login"
+                HeightRequest="54"
+                BackgroundColor="#9ED6DF"
+                FontSize="16" FontAttributes="Bold"
+                Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="7"
+                Margin="0,16,0,0"
+                Clicked="Button_Clicked"/>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader>
+        <StackLayout Padding="16,22,16,27">
+            <Label Text="DoctorHelper® AI" FontSize="20" FontAttributes="Bold" FontFamily="Montserrat"/>
+            <Label Text="Menu" TextColor="#706D6E" FontSize="12.08" FontFamily="OpenSans"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+
+
+    <ShellContent FlyoutItemIsVisible="False"
+                  Icon="drhlogo.jpg"
+                  Title="Home"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage" />
+
+    <ShellContent FlyoutItemIsVisible="False"
+                  Icon="drhlogo.jpg"
+                  Title="NewPage1"
+                  ContentTemplate="{DataTemplate local:NewPage1}"
+                  Route="NewPage1" />
+
+    <FlyoutItem
+        Icon="home.png"
+        Title="Home">
+        <ShellContent
+            Title="My Appointments"
+            ContentTemplate="{DataTemplate local:MyAppointments}"
+            Route="MyAppointments" />
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <StackLayout Padding="20">
+            <Button Text="Sign Out" />
+        </StackLayout>
+    </Shell.FlyoutFooter>
+
+</Shell>
