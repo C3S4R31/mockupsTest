@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Register"
+             Title="Register"
+             Shell.FlyoutBehavior="Disabled">
+    <ScrollView>
+        <Grid x:Name="ScreenGrid"
+              VerticalOptions="CenterAndExpand"
+              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              Padding="0,16,0,16">
+
+            <Image Source="drhlogo.jpg" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="3" />
+            <Label Text="DoctorHelper® AI" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" FontSize="24" FontAutoScalingEnabled="False" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,8,0,0" FontFamily="Montserrat"/>
+
+            <Label Text="Full Name" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="7" FontSize="16" FontAutoScalingEnabled="False" FontAttributes="Bold" Margin="0,24,0,0" />
+            <Frame Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="7" BorderColor="Gray" Padding="16,0,16,0" Margin="0,8,0,8">
+                <Entry x:Name="fullname_entry"
+                       Placeholder="Enter your full name"
+                       MaxLength="20"
+                       Keyboard="Text"
+                       Margin="0,0,0,0"
+                       HeightRequest="48"
+                       FontAutoScalingEnabled="False" />
+            </Frame>
+            <Label Text="Wrong Full Name" TextColor="Red" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="7" FontSize="12.08" FontAutoScalingEnabled="false" IsVisible="false"/>
+
+            <Label Text="Email" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="7" FontSize="16" FontAutoScalingEnabled="false" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Frame Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="7" BorderColor="Gray" Padding="16,0,0,0" Margin="0,8,0,8">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
+                    <Entry x:Name="email_entry"
+                           Placeholder="Enter your email"
+                           MaxLength="20"
+                           Keyboard="Email"
+                           Margin="0,0,0,0"
+                           HeightRequest="48"
+                           FontAutoScalingEnabled="False" />
+                    <BoxView Color="gray" WidthRequest="1" HeightRequest="48" Margin="8,0,0,0"/>
+
+                    <Label Text=" @CRM649683.OnMicrosoft.com" FontAutoScalingEnabled="false" VerticalTextAlignment="Center" HeightRequest="48"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Wrong Email" TextColor="Red" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="7" FontSize="12.08" FontAutoScalingEnabled="False" IsVisible="false"/>
+
+            <Label Text="Password" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="7" FontSize="16" FontAutoScalingEnabled="false" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Frame Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="7" BorderColor="Gray" Padding="16,0,16,0" Margin="0,8,0,8">
+                <Entry x:Name="password_entry"
+                       Placeholder="Enter your password"
+                       MaxLength="20"
+                       Keyboard="Default"
+                       IsPassword="True"
+                       Margin="0,0,0,0"
+                       HeightRequest="48"
+                       FontAutoScalingEnabled="False" />
+            </Frame>
+            <Label Text="Wrong Password" TextColor="Red" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="7" FontSize="12.08" FontAutoScalingEnabled="False" IsVisible="false"/>
+
+            <Label Text="Repeat Password" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="7" FontSize="16" FontAutoScalingEnabled="false" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Frame Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="7" BorderColor="Gray" Padding="16,0,16,0" Margin="0,8,0,8">
+                <Entry x:Name="rpassword_entry"
+                       Placeholder="Enter your password"
+                       MaxLength="20"
+                       Keyboard="Default"
+                       IsPassword="True"
+                       Margin="0,0,0,0"
+                       HeightRequest="48"
+                       FontAutoScalingEnabled="False" />
+            </Frame>
+            <Label Text="Wrong Password" TextColor="Red" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="7" FontSize="12.08" FontAutoScalingEnabled="False" IsVisible="false"/>
+
+            <Button Text="Register"
+                    HeightRequest="48"
+                    BackgroundColor="#9ED6DF"
+                    FontSize="16" FontAttributes="Bold" FontAutoScalingEnabled="False"
+                    Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="7"
+                    Margin="0,16,0,0"
+                    Clicked="Button_Clicked"/>
+
+            <HorizontalStackLayout Grid.Column="0" Grid.Row="15" Grid.ColumnSpan="7" Margin="0,8,0,0" HorizontalOptions="Center" HeightRequest="20">
+                <Label Text="Do you have an account?" FontSize="12.08" FontAutoScalingEnabled="False" VerticalTextAlignment="Center" />
+
+                <Button Text="Login Here"
+                        TextColor="#052652"
+                        FontSize="12.08" FontAttributes="Bold"
+                        BackgroundColor="Transparent"
+                        Padding="0,0,0,0"
+                        Margin="8,0,0,0"
+                        FontAutoScalingEnabled="False"
+                        Clicked="Button_Clicked_1"/>
+            </HorizontalStackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

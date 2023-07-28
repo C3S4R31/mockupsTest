@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MedicalH"
+             Title="Medical History"
+             Shell.FlyoutBehavior="Disabled">
+    <ScrollView>
+        <Grid x:Name="ScreenGrid"
+              VerticalOptions="CenterAndExpand"
+              RowDefinitions="Auto,Auto,Auto"
+              Padding="0,16,0,16">
+
+            <Label Text="Full Name" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" FontSize="16" FontAutoScalingEnabled="False" FontAttributes="Bold" Margin="0,24,0,0" />
+            <Frame Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" BorderColor="Gray" Padding="16,0,16,0" Margin="0,8,0,8">
+                <Entry x:Name="fullname_entry"
+                       Placeholder="Enter your full name"
+                       MaxLength="20"
+                       Keyboard="Text"
+                       Margin="0,0,0,0"
+                       HeightRequest="48"
+                       FontAutoScalingEnabled="False" />
+            </Frame>
+
+            <Button Text="Play"
+                    HeightRequest="48"
+                    BackgroundColor="#9ED6DF"
+                    FontSize="16" FontAttributes="Bold" FontAutoScalingEnabled="False"
+                    Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
+                    Margin="0,16,0,0"
+                    />
+
+            <Button Text="Record"
+                    HeightRequest="48"
+                    BackgroundColor="#9ED6DF"
+                    FontSize="16" FontAttributes="Bold" FontAutoScalingEnabled="False"
+                    Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="3"
+                    Margin="0,16,0,0"
+                    />
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

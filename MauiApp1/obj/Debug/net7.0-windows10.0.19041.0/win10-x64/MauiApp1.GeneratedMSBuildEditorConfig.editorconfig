@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[C:/Users/cesar/source/repos/MauiApp1/MauiApp1/MedicalH.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MedicalH.xaml
+build_metadata.AdditionalFiles.TargetPath = MedicalH.xaml
+build_metadata.AdditionalFiles.RelativePath = MedicalH.xaml
+
 [C:/Users/cesar/source/repos/MauiApp1/MauiApp1/MyAppointments.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MyAppointments.xaml
@@ -45,6 +51,18 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.NewPage1.xaml
 build_metadata.AdditionalFiles.TargetPath = NewPage1.xaml
 build_metadata.AdditionalFiles.RelativePath = NewPage1.xaml
+
+[C:/Users/cesar/source/repos/MauiApp1/MauiApp1/Register.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Register.xaml
+build_metadata.AdditionalFiles.TargetPath = Register.xaml
+build_metadata.AdditionalFiles.RelativePath = Register.xaml
+
+[C:/Users/cesar/source/repos/MauiApp1/MauiApp1/Report.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Report.xaml
+build_metadata.AdditionalFiles.TargetPath = Report.xaml
+build_metadata.AdditionalFiles.RelativePath = Report.xaml
 
 [C:/Users/cesar/source/repos/MauiApp1/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -17,7 +17,7 @@
 
         <Image Source="drhlogo.jpg" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="5"/>
 
-        <Label Text="DoctorHelper® AI" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" FontSize="31.25" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,8,0,0" FontFamily="Montserrat"/>
+        <Label Text="DoctorHelper® AI" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" FontSize="31.25" FontAutoScalingEnabled="False" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,8,0,0" FontFamily="Montserrat"/>
 
         <Button Text="Sign In"
                 HeightRequest="54"
@@ -25,13 +25,16 @@
                 FontSize="16" FontAttributes="Bold"
                 Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5"
                 Margin="0,104,0,24"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"
+                FontAutoScalingEnabled="False"/>
 
         <Button Text="Register" TextColor="#9ED6DF"
                 HeightRequest="54"
                 BackgroundColor="#FFFFFF" BorderColor="#9ED6DF" BorderWidth="1"
                 FontSize="16" FontAttributes="Bold"
-                Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" />
+                Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5"
+                Clicked="Button_Clicked_1"
+                FontAutoScalingEnabled="False"/>
 
         <!--<Label x:Name="mylabel1" Text="Valor" FontSize="25" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
         <Label x:Name="mylabel2" Text="Valor" FontSize="25" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7" />-->
